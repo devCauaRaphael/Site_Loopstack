@@ -1,6 +1,6 @@
 import { Home, Info, FolderOpen, Users, UserCheck, Mail } from "lucide-react";
 import { useState } from "react";
-import loopstacklogo from "./assets/loopstacklogo.jpeg";
+import loopstacklogo from "../assets/loopstackLogo.jpeg";
 const AppSidebar = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
