@@ -6,6 +6,19 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
   globalIgnores(['dist']),
+  // Regras específicas para arquivos Node.js (como configs)
+  {
+    files: ['tailwind.config.js', 'postcss.config.js'],
+    languageOptions: {
+      ecmaVersion: 2020,
+      sourceType: 'script', // Modo CommonJS
+      globals: globals.node,
+    },
+    linterOptions: {
+      reportUnusedDisableDirectives: true,
+    },
+  },
+  // Regras padrão para JS/JSX
   {
     files: ['**/*.{js,jsx}'],
     extends: [
