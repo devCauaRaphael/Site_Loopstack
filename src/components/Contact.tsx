@@ -50,20 +50,20 @@ const Contact = () => {
     {
       icon: Mail,
       title: "E-mail",
-      value: "contato@loopstack.com.br",
-      link: "mailto:contato@loopstack.com.br"
+      value: "LoopstackTechSolutions@gmail.com",
+      link: "mailto:LoopstackTechSolutions@gmail.com"
     },
     {
       icon: Phone,
       title: "Telefone",
-      value: "(11) 99999-9999",
-      link: "tel:+5511999999999"
+      value: "(11) 93279-5288",
+      link: "tel:+5511932795288"
     },
     {
       icon: MapPin,
       title: "Localização",
       value: "São Paulo, SP - Brasil",
-      link: "https://maps.google.com"
+      link: "https://www.google.com/maps/place/ETEC+Prof%C2%B0+Basilides+de+Godoy+-+Rua+Guaip%C3%A1+-+Vila+Leopoldina,+S%C3%A3o+Paulo+-+State+of+S%C3%A3o+Paulo/@-23.5130033,-46.7732438,15z/data=!4m5!3m4!1s0x94cef8c1d371ec31:0x671c9325c275132e!8m2!3d-23.5208186!4d-46.7277865?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
     }
   ];
 
@@ -220,7 +220,7 @@ const Contact = () => {
                       asChild
                     >
                       <a 
-                        href="https://maps.google.com" 
+                        href="https://www.google.com/maps/place/ETEC+Prof%C2%B0+Basilides+de+Godoy+-+Rua+Guaip%C3%A1+-+Vila+Leopoldina,+S%C3%A3o+Paulo+-+State+of+S%C3%A3o+Paulo/@-23.5130033,-46.7732438,15z/data=!4m5!3m4!1s0x94cef8c1d371ec31:0x671c9325c275132e!8m2!3d-23.5208186!4d-46.7277865?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D" 
                         target="_blank" 
                         rel="noopener noreferrer"
                       >

@@ -21,9 +21,9 @@ const About = () => {
   ];
 
   const achievements = [
-    { number: "50+", label: "Projetos Concluídos" },
+    { number: "5+", label: "Projetos Concluídos" },
     { number: "30+", label: "Clientes Satisfeitos" },
-    { number: "5+", label: "Anos de Experiência" },
+    { number: "1+", label: "Anos de Experiência" },
     { number: "98%", label: "Taxa de Satisfação" }
   ];
 

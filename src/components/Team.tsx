@@ -1,55 +1,66 @@
-import { Linkedin, Github, Mail } from "lucide-react";
+import { Linkedin, Github, Mail, Globe } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const Team = () => {
   const teamMembers = [
     {
-      name: "Carlos Silva",
-      role: "CEO & Lead Developer",
-      bio: "10+ anos de experiência em desenvolvimento de sistemas corporativos e liderança de equipes técnicas.",
+      name: "Vinicius Cavequi",
+      role: "CEO & Lider de Desenvolvimento",
       avatar: "👨‍💼",
-      skills: ["React", "Node.js", "AWS", "Leadership"],
+      skills: ["C#", ".NET", "HTML", "CSS", "JavaScript", "Leadership"],
       social: {
         linkedin: "#",
-        github: "#",
-        email: "carlos@loopstack.com.br"
+        github: "https://github.com/cavequi",
+        email: "vinicavequi@gmail.com",
+        website: "https://www.linkedin.com/in/vinicius-cavequi-207bb8353/"
       }
     },
     {
-      name: "Ana Santos",
-      role: "Frontend Developer",
-      bio: "Especialista em interfaces modernas e experiência do usuário, com foco em React e design systems.",
+      name: "Débora Monique",
+      role: "Database Developer",
       avatar: "👩‍💻",
       skills: ["React", "TypeScript", "UI/UX", "Figma"],
       social: {
         linkedin: "#",
         github: "#",
-        email: "ana@loopstack.com.br"
+        email: "ana@loopstack.com.br",
+        website: "#"
       }
     },
     {
-      name: "Pedro Oliveira",
+      name: "Cauã Raphael",
       role: "Backend Developer",
-      bio: "Expert em arquitetura de sistemas, APIs RESTful e bancos de dados escaláveis.",
       avatar: "👨‍💻",
-      skills: ["Node.js", "Python", "PostgreSQL", "Docker"],
+      skills: ["Node.js", "Java", "JavaScript", "MySQL", "MongoDB", "GraphQL", "Restful", "PHP", "PostgreSQL", "Docker", "CI/CD", "AWS", "Azure", "GCP"],
       social: {
-        linkedin: "#",
-        github: "#",
-        email: "pedro@loopstack.com.br"
+        linkedin: "https://www.linkedin.com/in/devcauaraphael/",
+        github: "https://github.com/devCauaRaphael",
+        email: "dev.cauaraphael@gmail.com",
+        website: "https://devcauaraphael.github.io/Site_Portfolio/?fbclid=PAZXh0bgNhZW0CMTEAAaeu2zSW75w7H9qJxUyzR4mJK0_mK9bzeo31_wIG8A_ojZxffOpcZBX3tHDnzg_aem_5T4MIU_0H-FDsPvlOfeqhA"
       }
     },
     {
-      name: "Maria Costa",
-      role: "DevOps Engineer",
-      bio: "Responsável pela infraestrutura e deploy de aplicações, com expertise em cloud computing.",
+      name: "Otávio",
+      role: "Frontend Developer",
       avatar: "👩‍🔧",
       skills: ["AWS", "Docker", "Kubernetes", "CI/CD"],
       social: {
         linkedin: "#",
         github: "#",
-        email: "maria@loopstack.com.br"
+        email: "maria@loopstack.com.br",
+        website: "#"
+      }
+    },
+    {
+      name: "Matheus Torsani",
+      role: "Mobile Developer",
+      avatar: "👩‍🔧",
+      skills: ["CSS", "SASS", "JavaScript", "Node.JS", "Dart", "Flutter", "Git", "Github"],
+      social: {
+        github: "https://github.com/matheustorsani",
+        email: "matheustorsani001@hotmail.com ",
+        website: "https://urldemetrius.space/"
       }
     }
   ];
@@ -81,7 +92,6 @@ const Team = () => {
                 {/* Info */}
                 <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                 <p className="text-primary font-medium mb-3">{member.role}</p>
-                <p className="text-sm text-muted-foreground mb-4">{member.bio}</p>
                 
                 {/* Skills */}
                 <div className="flex flex-wrap gap-1 justify-center mb-4">
@@ -97,6 +107,11 @@ const Team = () => {
                 
                 {/* Social Links */}
                 <div className="flex justify-center space-x-2">
+                  <Button variant="ghost" size="sm" asChild>
+                    <a href={member.social.website} target="_blank" rel="noopener noreferrer" aria-label={`Portfólio de ${member.name}`}>
+                      <Globe className="h-4 w-4" />
+                    </a>
+                  </Button>
                   <Button variant="ghost" size="sm" asChild>
                     <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
                       <Linkedin className="h-4 w-4" />
@@ -117,20 +132,7 @@ const Team = () => {
             </Card>
           ))}
         </div>
-
-        {/* CTA */}
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-4">
-            Interessado em fazer parte da nossa equipe?
-          </p>
-          <Button 
-            variant="outline" 
-            size="lg"
-          >
-            Ver Vagas Abertas
-          </Button>
         </div>
-      </div>
     </section>
   );
 };

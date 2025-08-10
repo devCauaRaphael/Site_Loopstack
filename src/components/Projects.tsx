@@ -104,16 +104,6 @@ const Projects = () => {
             </Card>
           ))}
         </div>
-
-        {/* CTA */}
-        <div className="text-center">
-          <Button 
-            size="lg" 
-            className="bg-gradient-primary hover:shadow-glow"
-          >
-            Ver Todos os Projetos
-          </Button>
-        </div>
       </div>
     </section>
   );

@@ -7,6 +7,7 @@ import Team from "@/components/Team";
 import Clients from "@/components/Clients";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ArrowNav from "@/components/ArrowNav";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
         <Contact />
         <Footer />
       </main>
+      <ArrowNav />
     </div>
   );
 };

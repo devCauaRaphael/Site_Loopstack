@@ -1,6 +1,6 @@
-import { Home, Info, FolderOpen, Users, UserCheck, Mail } from "lucide-react";
+import { Home, Info, FolderOpen, Users, UserCheck, Mail, ChevronUp, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import loopstackLogo from "@/assets/loopstack-logo.png";
+import loopstackLogo from "@/assets/loopstack-logo.jpeg";
 
 const AppSidebar = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
@@ -22,8 +22,45 @@ const AppSidebar = () => {
     
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      (element as HTMLElement).scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const sectionSelectors = navigationItems
+    .map((i) => i.url)
+    .filter((u) => u.startsWith('#') && u.length > 1);
+
+  const getCurrentSectionIndex = () => {
+    if (!sectionSelectors.length) return -1;
+    const positions = sectionSelectors.map((sel) => {
+      const el = document.querySelector(sel) as HTMLElement | null;
+      if (!el) return { sel, dist: Number.POSITIVE_INFINITY };
+      const rect = el.getBoundingClientRect();
+      return { sel, dist: Math.abs(rect.top) };
+    });
+    let min = Number.POSITIVE_INFINITY;
+    let idx = -1;
+    positions.forEach((p, i) => {
+      if (p.dist < min) {
+        min = p.dist;
+        idx = i;
+      }
+    });
+    return idx;
+  };
+
+  const scrollToRelativeSection = (dir: 'up' | 'down') => {
+    const current = getCurrentSectionIndex();
+    if (current === -1) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    const nextIndex = dir === 'down'
+      ? Math.min(current + 1, sectionSelectors.length - 1)
+      : Math.max(current - 1, 0);
+    const nextSel = sectionSelectors[nextIndex];
+    const el = document.querySelector(nextSel) as HTMLElement | null;
+    el?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -34,8 +71,8 @@ const AppSidebar = () => {
           <div className="relative group">
             <img 
               src={loopstackLogo} 
-              alt="LoopStack" 
-              className="h-8 w-auto opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110"
+              alt="LoopStack Logo" 
+              className="h-10 w-10 rounded-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110 ring-1 ring-border/50"
             />
             <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></div>
           </div>
@@ -65,7 +102,7 @@ const AppSidebar = () => {
                 <div className="absolute inset-0 rounded-xl bg-gradient-primary opacity-0 group-hover:opacity-10 transition-all duration-300 group-hover:scale-110"></div>
                 
                 {/* Glowing dot indicator */}
-                <div className="absolute -right-1 -top-1 w-2 h-2 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 animate-pulse"></div>
+                
               </button>
 
               {/* Tooltip */}
@@ -84,14 +121,16 @@ const AppSidebar = () => {
           ))}
         </div>
 
+
         {/* Bottom accent */}
-        <div className="mt-4 pt-3 border-t border-border/30">
+        <div className="mt-3 pt-3 border-t border-border/30">
           <div className="w-8 h-1 bg-gradient-primary rounded-full mx-auto opacity-60"></div>
         </div>
       </div>
 
       {/* Ambient glow effect */}
       <div className="absolute inset-0 bg-gradient-primary/20 rounded-2xl blur-xl -z-10 opacity-50"></div>
+
     </div>
   );
 };

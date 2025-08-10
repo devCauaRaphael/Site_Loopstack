@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import loopstackLogo from "@/assets/loopstack-logo.png";
+import loopstackLogo from "@/assets/loopstack-logo.jpeg";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ const Navbar = () => {
               <img 
                 src={loopstackLogo} 
                 alt="LoopStack Logo" 
-                className="h-10 w-auto"
+                className="h-10 w-10 rounded-full object-cover ring-1 ring-border/50"
               />
               <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                 LoopStack
