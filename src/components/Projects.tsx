@@ -3,41 +3,27 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-const Projects = () => {
-  const projects = [
-    {
-      title: "Sistema de Gestão Empresarial",
-      description: "ERP completo desenvolvido para otimizar processos administrativos e financeiros de empresas de médio porte.",
-      icon: Database,
-      technologies: ["React", "Node.js", "PostgreSQL", "AWS"],
-      category: "Web Application",
-      image: "🏢"
-    },
-    {
-      title: "E-commerce Personalizado",
-      description: "Plataforma de vendas online com sistema de pagamentos integrado e painel administrativo completo.",
-      icon: ShoppingCart,
-      technologies: ["Next.js", "Stripe", "MongoDB", "Vercel"],
-      category: "E-commerce",
-      image: "🛒"
-    },
-    {
-      title: "App Mobile de Delivery",
-      description: "Aplicativo móvel para delivery de comida com geolocalização, pagamentos e notificações push.",
-      icon: Smartphone,
-      technologies: ["React Native", "Firebase", "Redux", "Maps API"],
-      category: "Mobile App",
-      image: "📱"
-    },
-    {
-      title: "Portal Corporativo",
-      description: "Intranet corporativa com gestão de documentos, comunicação interna e controle de acesso.",
-      icon: Globe,
-      technologies: ["Vue.js", "Express", "MySQL", "Docker"],
-      category: "Web Portal",
-      image: "🌐"
-    }
-  ];
+    const Projects = () => {
+      const projects = [
+        {
+          title: "Anu Viagens ERP",
+          description: "ERP completo desenvolvido para otimizar processos administrativos e financeiros de empresas de médio porte.",
+          icon: Database,
+          technologies: ["C#", "MySQL", "ASP.NET", "Bootstrap"],
+          github:"https://github.com/TCC-ETEC-01/E-Commerce",
+          category: "ERP",
+          image: "🏢"
+        },
+        {
+          title: "Vegalume E-commerce",
+          description: "Plataforma de vendas online com sistema de pagamentos integrado e painel administrativo completo.",
+          icon: ShoppingCart,
+          technologies: ["C#", "MySQL", "Asp.NET", "BootStrap"],
+          github: "https://github.com/LoopstackTechSolutions/vegalume",
+          category: "E-commerce",
+          image: "🛒"
+        }
+      ];
 
   return (
     <section id="projetos" className="py-20 bg-background">
@@ -90,15 +76,16 @@ const Projects = () => {
                     </Badge>
                   ))}
                 </div>
-                
                 <div className="flex space-x-2">
-                  <Button variant="outline" size="sm" className="flex-1">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Ver Detalhes
-                  </Button>
-                  <Button variant="ghost" size="sm">
-                    <Github className="h-4 w-4" />
-                  </Button>
+              {project.github && (
+                <Button 
+                  variant="ghost" 
+                  size="sm"
+                 onClick={() => window.open(project.github, "_blank", "noopener,noreferrer")}
+                >     
+               <Github className="h-4 w-4" />
+              </Button>
+             )}
                 </div>
               </CardContent>
             </Card>

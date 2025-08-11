@@ -8,7 +8,7 @@ const Team = () => {
       name: "Vinicius Cavequi",
       role: "CEO & Lider de Desenvolvimento",
       avatar: "👨‍💼",
-      skills: ["C#", ".NET", "HTML", "CSS", "JavaScript", "Leadership"],
+      skills: ["C#", ".NET", "HTML", "CSS", "JavaScript", "Leadership", "Java"],
       social: {
         linkedin: "#",
         github: "https://github.com/cavequi",
@@ -20,12 +20,11 @@ const Team = () => {
       name: "Débora Monique",
       role: "Database Developer",
       avatar: "👩‍💻",
-      skills: ["React", "TypeScript", "UI/UX", "Figma"],
+      skills: ["C#", "JavaScript", "MySQL", "SQL Server", "Git", "Github", "React", "CSS", "HTML"],
       social: {
-        linkedin: "#",
-        github: "#",
-        email: "ana@loopstack.com.br",
-        website: "#"
+        linkedin: "https://www.linkedin.com/in/debora-monique-silva-45b982353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "https://github.com/Unic0rna",
+        email: "ds336756@gmail.com",
       }
     },
     {
@@ -41,22 +40,21 @@ const Team = () => {
       }
     },
     {
-      name: "Otávio",
+      name: "Otávio Santos",
       role: "Frontend Developer",
       avatar: "👩‍🔧",
-      skills: ["AWS", "Docker", "Kubernetes", "CI/CD"],
+      skills: ["SASS", "Dart", "JavaScript", "Flutter", "Git", "Github", "HTML", "CSS", "C#", "MySQL"],
       social: {
-        linkedin: "#",
-        github: "#",
-        email: "maria@loopstack.com.br",
-        website: "#"
+        linkedin: "https://br.linkedin.com/in/otavio-santos-andrigo-74bbb7353",
+        github: "Https://github.com/Tavinzn",
+        email: "Otaviosantosandrigo08@gmail.com",
       }
     },
     {
       name: "Matheus Torsani",
       role: "Mobile Developer",
       avatar: "👩‍🔧",
-      skills: ["CSS", "SASS", "JavaScript", "Node.JS", "Dart", "Flutter", "Git", "Github"],
+  skills: ["CSS", "SASS", "JavaScript", "Node.Js", "Dart", "Flutter", "Git", "Github", "Vue.Js", "React", "React Native", "TypeScript", "MongoDB"],
       social: {
         github: "https://github.com/matheustorsani",
         email: "matheustorsani001@hotmail.com ",

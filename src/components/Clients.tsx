@@ -113,7 +113,7 @@ const Clients = () => {
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
             { number: "30+", label: "Clientes Ativos" },
-            { number: "50+", label: "Projetos Entregues" },
+            { number: "5+", label: "Projetos Entregues" },
             { number: "98%", label: "Satisfação" },
             { number: "24/7", label: "Suporte" }
           ].map((stat, index) => (

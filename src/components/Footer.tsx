@@ -38,19 +38,19 @@ const Footer = () => {
     {
       name: "Instagram",
       icon: Instagram,
-      href: "https://instagram.com/loopstack",
+      href: "https://instagram.com/LoopstacktechSolutions",
       color: "hover:text-pink-500"
     },
     {
       name: "WhatsApp",
       icon: MessageCircle,
-      href: "https://wa.me/5511999999999",
+      href: "https://wa.me/5511932795288",
       color: "hover:text-green-500"
     },
     {
       name: "E-mail",
       icon: Mail,
-      href: "mailto:contato@loopstack.com.br",
+      href: "mailto:LoopstackTechSolutions@gmail.comr",
       color: "hover:text-blue-500"
     }
   ];
@@ -74,11 +74,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span className="text-muted-foreground">(11) 99999-9999</span>
+                <span className="text-muted-foreground">(11) 93279-5288</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-muted-foreground">contato@loopstack.com.br</span>
+                <span className="text-muted-foreground">LoopstackTechSolutions@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-primary" />

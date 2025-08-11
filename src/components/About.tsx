@@ -33,7 +33,7 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Sobre a <span className="bg-gradient-primary bg-clip-text text-transparent">LoopStack</span>
+            Sobre a <span className="bg-gradient-primary shadow-glow bg-clip-text text-transparent">Loopstack</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Somos uma empresa especializada em desenvolvimento de sistemas personalizados, 

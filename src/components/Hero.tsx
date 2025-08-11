@@ -25,6 +25,7 @@ const Hero = () => {
     <section className="min-h-screen pt-16 flex items-center bg-gradient-hero">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          
           {/* Left Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
@@ -48,7 +49,13 @@ const Hero = () => {
                 Começar Projeto
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg">
+
+              {/* Botão GitHub */}
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => window.open("https://github.com/LoopstackTechSolutions", "_blank", "noopener,noreferrer")}
+              >
                 Ver Portfólio
               </Button>
             </div>
