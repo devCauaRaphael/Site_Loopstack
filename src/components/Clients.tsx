@@ -46,7 +46,7 @@ const Clients = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Nossos <span className="bg-gradient-primary bg-clip-text text-transparent">Clientes</span>
+            Nossos <span className="text-primary bg-clip-text ">Clientes</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Empresas que confiam na LoopStack para transformar seus processos e impulsionar seus resultados.
@@ -118,7 +118,7 @@ const Clients = () => {
             { number: "24/7", label: "Suporte" }
           ].map((stat, index) => (
             <div key={index}>
-              <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
+              <div className="text-3xl font-bold text-primary bg-clip-text mb-2">
                 {stat.number}
               </div>
               <div className="text-sm text-muted-foreground">

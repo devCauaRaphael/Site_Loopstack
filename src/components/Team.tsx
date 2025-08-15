@@ -69,7 +69,7 @@ const Team = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Nossa <span className="bg-gradient-primary bg-clip-text text-transparent">Equipe</span>
+            Nossa <span className="text-primary bg-clip-text ">Equipe</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Conheça os profissionais talentosos que fazem a diferença em cada projeto da LoopStack.

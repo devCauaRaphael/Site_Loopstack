@@ -73,7 +73,7 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Entre em <span className="bg-gradient-primary bg-clip-text text-transparent">Contato</span>
+            Entre em <span className="text-primary bg-clip-text">Contato</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Pronto para transformar sua ideia em realidade? Vamos conversar sobre seu projeto.

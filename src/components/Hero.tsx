@@ -30,7 +30,7 @@ const Hero = () => {
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
               Desenvolvemos
-              <span className="block bg-gradient-primary bg-clip-text text-transparent">
+              <span className="block text-primary bg-clip-text">
                 Sistemas Inovadores
               </span>
               para sua Empresa

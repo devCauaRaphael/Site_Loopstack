@@ -26,7 +26,7 @@ const Navbar = () => {
                 alt="LoopStack Logo" 
                 className="h-10 w-10 rounded-full object-cover ring-1 ring-border/50"
               />
-              <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+              <div className="text-2xl font-bold text-primary bg-clip-text ">
                 LoopStack
               </div>
             </div>

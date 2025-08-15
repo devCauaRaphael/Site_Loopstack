@@ -31,7 +31,7 @@ import { Badge } from "@/components/ui/badge";
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Nossos <span className="bg-gradient-primary bg-clip-text text-transparent">Projetos</span>
+            Nossos <span className="text-primary bg-clip-text ">Projetos</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Desenvolvemos soluções sob medida que transformam a forma como nossos clientes conduzem seus negócios.
